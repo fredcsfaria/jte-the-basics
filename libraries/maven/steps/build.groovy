@@ -1,5 +1,5 @@
 void call(){
     stage("Maven: Build"){
-        println "build from the maven library ${config.threshold} "
+        println "build from the maven library ${config.branchName} "
     }
 }
