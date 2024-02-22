@@ -1,7 +1,7 @@
 void call( String name1){
     stage("Maven: Build"){
         println "build from the maven library ${config.branchName}       "
-        println "${name1}"
+        echo name1
          println "Prepara para build"
        // seta contexto default - build Host
      //  sh 'docker context use default'
