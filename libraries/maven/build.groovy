@@ -1,5 +1,3 @@
-void call(){
-    stage("Maven: Build"){
-        println "build from the maven library ${config.branchName}"
-    }
+void prepare(String repo){
+    println "git commit -m ${repo}" 
 }
