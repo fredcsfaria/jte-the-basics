@@ -1,4 +1,4 @@
-void call(){
+void call( String name1){
     stage("Maven: Build"){
         println "build from the maven library ${config.branchName}       "
          println "Prepara para build"
