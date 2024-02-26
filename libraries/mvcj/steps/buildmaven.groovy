@@ -1,5 +1,5 @@
 void call( String branchName){
-    stage("mvcj: Prepare"){
+    stage("mvcj: Build"){
         println "Build com Maven - branch  ${branchName} " 
         
          //println "Prepara para build"
