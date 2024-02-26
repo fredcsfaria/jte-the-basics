@@ -1,7 +1,7 @@
-void call( String name1){
+void call(){
     stage("mvcj: Build"){
-        println "Build from the maven library   ${name1} " 
-        
+        println "Build project with Maven" 
+        sh ' mvn --batch-mode install -P nexus'
         
     }
 }
