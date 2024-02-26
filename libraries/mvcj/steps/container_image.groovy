@@ -1,4 +1,4 @@
-void call( (app_env) ){
+void call( app_env ){
     stage("mvcj: Deploy to "){
           println  "${app_env.long_name}"
         println "Build image from source " 
