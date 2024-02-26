@@ -1,4 +1,4 @@
-void call( String name1){
+void call( ){
     stage("mvcj: Container_Image"){
         println "Build image from source " 
         
