@@ -1,7 +1,7 @@
-void call(){
+void call() {
     stage("mvcj: Build"){
         println "Build project with Maven" 
-        sh ' mvn --batch-mode install -P nexus'
+      //  sh ' mvn --batch-mode install -P nexus'
         
     }
 }
