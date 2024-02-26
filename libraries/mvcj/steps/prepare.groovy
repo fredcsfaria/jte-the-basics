@@ -1,7 +1,7 @@
 void call( String branchName){
     stage("mvcj: Prepare"){
         println "Checkout from branch   ${branchName} "
-         println "Checkout from branch  config.branchName3"    
+         println "Checkout from branch ${config.branchName3}"    
         
          println "Prepara para build"
        // seta contexto default - build Host
