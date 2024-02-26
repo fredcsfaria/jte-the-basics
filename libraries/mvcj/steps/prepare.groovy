@@ -2,7 +2,7 @@ void call( String branchName){
     stage("mvcj: Prepare"){
         println "Checkout from branch   ${branchName} "
          println "Checkout from config branch ${config.branchName3}"    
-         println "Checkout from keyword branch ${config.branchName1}" 
+         println "Checkout from keyword branch ${branchName1}" 
          println "Prepara para build"
        // seta contexto default - build Host
        sh 'docker context use default'
