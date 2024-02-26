@@ -1,7 +1,7 @@
 void call( String branchName){
     stage("mvcj: Prepare"){
         println "Checkout from branch   ${branchName} " 
-        echo name1
+        
          println "Prepara para build"
        // seta contexto default - build Host
        sh 'docker context use default'
