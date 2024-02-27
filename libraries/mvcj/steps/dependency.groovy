@@ -1,6 +1,7 @@
-void call( String name1){
+void call( String cimage){
     stage("mvcj: Dependency"){
-        println "Build from the maven library   ${name1} " 
+        println "Produzindo informação de dependencias  ${cimage} " 
+        sh  'trivy image --format cyclonedx  --scanners vuln --timeout 15m --output trivy-result-sbom-json.ci.out  ${IMAGE_NAME} '
         
         
     }
