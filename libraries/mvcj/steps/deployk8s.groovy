@@ -2,7 +2,7 @@ void call( app_env ){
     stage("mvcj: Deploy "){
 
         println "AQUI"  
-        println "${SVN_REPO_URL}"
+        println "${env.REPOSITORYE}"
        // println "${app_env.DEFAULT_REPOSITORY2}" +  "/" + "${DEFAULT_REPOSITORY1}" + "/" + "${IMAGE_NAME1}"
        //def IMAGE = "${app_env.IMAGE_REPOSITORY}" +  "/" + "${REPOSITORY}" + "/" + "${IMAGE_NAME}"
        def IMAGE = "${app_env.CONTAINER_REGISTRY}" +  "/" + "${REPOSITORY}" + "/" + "${IMAGE_NAME}" + ":" + "${IMAGE_TAG}"
